@@ -107,7 +107,7 @@ docker run --name PostgreSQL -h postgres \
 -e POSTGRES_PASSWORD=postgres \
 -d postgres:9.5.5
 ---------------
-docker exec -ti PostgreSQL bash -c "su postgres"
+docker exec -ti Postgres bash -c "su postgres"
 createdb dbzone
 psql -U postgres
 create user luvres with password 'aamu02';

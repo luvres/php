@@ -1,12 +1,6 @@
 <?php
 
-  $connStr = "$PG_HOST $PG_USER $PG_PASS $PG_NAME $PG_PORT";
-  $conn = pg_connect($connStr);
+  require("conn/postgres.php");
+  require("pdo/postgres.php");
 
-  if(!($conn)){
-    $result = "Connect Fail ... ";
-  }else{
-    $result = "Postgres -> Connect!";
-  }
-  
-  pg_close($conn);
+  @pg_close($conn);

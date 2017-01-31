@@ -6,7 +6,9 @@
 </head>
 <body>
 
-  <p><?=$result?></p>
-  
+  <p><h3><?=$result?></h3></p>
+  <p><h3><?=$resPDO?></h3></p>
+
+
 </body>
 </html>
