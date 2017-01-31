@@ -1,9 +1,6 @@
 <?php
 
   # MySQl (MariaDB)
-  //$DB_HOST = "localhost";
-  //$DB_HOST = "169.8.192.130";
-  //$DB_HOST = "izone.changeip.org";
   $DB_HOST = "mariadb-host";
   $DB_USER = "root";
   $DB_PASS = "maria";

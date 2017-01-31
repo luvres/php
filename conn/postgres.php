@@ -1,9 +1,6 @@
 <?php
 
   # Postgres
-  //$PG_HOST = "host=localhost";
-  //$PG_HOST = "host=169.8.192.130";
-  //$DB_HOST = "host=izone.changeip.org";
   $HOST = "postgres-host";
   $USER = "postgres";
   $PASS = "postgres";
