@@ -7,7 +7,7 @@
   $DB_HOST = "mariadb-host";
   $DB_USER = "root";
   $DB_PASS = "maria";
-  $DB_NAME = "dbzone";
+  $DB_NAME = "mysql";
   $DB_PORT = "3306";
 
   try {
