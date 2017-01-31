@@ -86,7 +86,7 @@ function update($conn){
   if(isset($_POST["id"])){
     $user = $_POST["txtNome"];
     $email = $_POST["txtEmail"];
-    $pass = md5($_POST["txtPass"]);    
+    $pass = md5($_POST["txtPass"]); 
     $perfil = $_POST["radPerfil"];
     $id = $_POST["id"];
     
