@@ -1,5 +1,5 @@
 ## PHP Web Development
-### LLMPP stack (Alpine, Lighttpd, MariaDB, Postgres, PHP5)
+### ALMPP stack (Alpine, Lighttpd, MariaDB, Postgres, PHP5)
 ##### MariaDB 10.1
 ```
 docker run --name MariaDB -h mariadb \
@@ -26,6 +26,28 @@ docker run --rm --name Php -h php \
 -v $HOME/www:/var/www \
 -ti izone/alpine:php
 ```
+### phpMyAdmin
+##### Usage with linked server
+```
+docker run --rm --name Myadmin -h phpmyadmin \
+--link MariaDB:db \
+-p 8080:80 \
+-ti izone/arm:phpmyadmin
+```
+##### Usage with external server
+```
+docker run --rm --name Myadmin -h phpmyadmin \
+-e PMA_HOST=191.96.255.100 \
+-p 8080:80 \
+-ti izone/arm:phpmyadmin
+```
+##### Browser access
+```
+http://localhost:8080/
+```
+##### Official phpMyAdmin Docker image
+##### https://github.com/phpmyadmin/docker
+
 
 ### Database connections
 ##### MySQL
