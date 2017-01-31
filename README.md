@@ -16,6 +16,8 @@ docker run --name Postgres -h postgres \
 ##### PHP 5.6 and Lighttpd
 ```
 mkdir $HOME/www
+https://github.com/luvres/php.git
+cp -a php/* $HOME/www
 
 docker run --rm --name Php -h php \
 --link MariaDB:mariadb-host \
