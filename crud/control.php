@@ -46,7 +46,7 @@ function create($conn){
   if(isset($_POST["formUser"])){
     $user = $_POST["txtNome"];
     $email = $_POST["txtEmail"];
-    $pass = $_POST["txtPass"];
+    $pass = md5($_POST["txtPass"]);
     $perfil = $_POST["radPerfil"];
 
     if(user_create($conn, $user, $email, $pass, $perfil)){
@@ -86,7 +86,7 @@ function update($conn){
   if(isset($_POST["id"])){
     $user = $_POST["txtNome"];
     $email = $_POST["txtEmail"];
-    $pass = $_POST["txtPass"];
+    $pass = md5($_POST["txtPass"]);    
     $perfil = $_POST["radPerfil"];
     $id = $_POST["id"];
     
